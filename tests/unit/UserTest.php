@@ -26,4 +26,14 @@ class UserTest extends TestCase
         $this->assertEquals($user->getLastName(), 'Ahmed');
 
     }
+
+
+    public function testFullNameIsReturened(){
+        $user = new \App\Models\User;
+
+        $user->setFirstName('Sabbir');
+        $user->setLastName('Ahmed');
+
+        $this->assertEquals($user->getFullName(), 'Sabbir Ahmed');
+    }
 }
