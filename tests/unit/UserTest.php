@@ -3,11 +3,11 @@ use PHPUnit\Framework\TestCase;
 
 class UserTest extends TestCase
 {
-    //
-    public function testThatWeCanGetTheFirstName()
+    // public function testThatWeCanGetTheFirstName()
+    /** @test */
+    public function that_we_can_get_the_first_name()
     {
         
-        //
         $user = new \App\Models\User;
 
         $user->setFirstName('Sabbir');
@@ -20,7 +20,6 @@ class UserTest extends TestCase
     public function testThatWeCanGetTheLastName()
     {
         
-        //
         $user = new \App\Models\User;
 
         $user->setLastName('Ahmed');
