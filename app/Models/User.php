@@ -10,7 +10,7 @@ class User
 
     public function setFirstName($firstName)
     {
-        $this->first_name = $firstName;
+        $this->first_name = trim($firstName);
     }
 
     public function getFirstName(){
@@ -20,7 +20,7 @@ class User
 
     public function setLastName($lastName)
     {
-        $this->last_name = $lastName;
+        $this->last_name = trim($lastName);
     }
 
     public function getLastName(){
