@@ -3,3 +3,4 @@
 2. UserModel Test
 3. Clearing Up test method
 4. SetUp Method
+5. Collection Class
