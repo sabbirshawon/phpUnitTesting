@@ -13,4 +13,10 @@ class Collection
 
     }
 
+
+    public function count()
+    {
+        
+    }
+
 }
