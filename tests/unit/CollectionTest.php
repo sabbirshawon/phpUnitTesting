@@ -98,8 +98,11 @@ class CollectionTest extends TestCase
             ['username' => 'shawon'],
         ]);
 
-        $this->assertInternalType('string', $collection->toJson());
+        //$this->assertInternalType('string', $collection->toJson());
+        $this->assertIsString($collection->toJson());
         $this->assertEquals('[{"username":"sabbir"},{"username":"shawon"}]', $collection->toJson());
     }
+
+
 
 }
